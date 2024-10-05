@@ -25,7 +25,9 @@ async function initializeExpressServer() {
         about: "In Node.js, a caching layer is the part of the backend application that contains the logic to implement response caching logic. This code must rely on a caching provider, such as Redis. Now, the problem is that Redis works in memory, and RAM is expensive.",
         example:{
          api_url :"https://layered-caching.onrender.com/api/v1/users" ,
-         desc: "use the endpoint above to test with redis"
+         desc: "use the endpoint above to test with as its already connected with a redis account",
+         note: "it will take up to 20secs for the first response and then less than a second for subsequent request which lasts for 2mins.",
+         remarks: "GoodLuck 👍"
         }
       }
     })
