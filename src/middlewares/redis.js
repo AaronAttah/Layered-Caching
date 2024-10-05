@@ -75,7 +75,7 @@ async function readData(key) {
 
 function redisCachingMiddleware(
   options = {
-    EX: 120//2m //21600, // 6h
+    EX: 120,//2m //21600, // 6h
   }
 ) {
   return async (req, res, next) => {
